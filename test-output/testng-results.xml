@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-09T12:24:57 IST" name="Suite" finished-at="2025-04-09T12:25:21 IST" duration-ms="23881">
+    <groups>
+    </groups>
+    <test started-at="2025-04-09T12:24:57 IST" name="Test" finished-at="2025-04-09T12:25:21 IST" duration-ms="23881">
+      <class name="RestAPITest.LYFTTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.LYFTTest@5a6482a9]" started-at="2025-04-09T12:25:18 IST" name="setup" finished-at="2025-04-09T12:25:20 IST" duration-ms="1504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetDetails()[pri:0, instance:RestAPITest.LYFTTest@5a6482a9]" started-at="2025-04-09T12:25:20 IST" name="testGetDetails" finished-at="2025-04-09T12:25:21 IST" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.LYFTTest@5a6482a9]" started-at="2025-04-09T12:25:21 IST" name="tearDown" finished-at="2025-04-09T12:25:21 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RestAPITest.LYFTTest -->
+      <class name="RestAPITest.IVRTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.IVRTest@515ebef3]" started-at="2025-04-09T12:24:57 IST" name="setup" finished-at="2025-04-09T12:25:08 IST" duration-ms="10477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetActiveRide()[pri:0, instance:RestAPITest.IVRTest@515ebef3]" started-at="2025-04-09T12:25:08 IST" name="testGetActiveRide" finished-at="2025-04-09T12:25:10 IST" duration-ms="1957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetActiveRide -->
+        <test-method signature="testGetNextLeg()[pri:0, instance:RestAPITest.IVRTest@515ebef3]" started-at="2025-04-09T12:25:10 IST" name="testGetNextLeg" finished-at="2025-04-09T12:25:17 IST" duration-ms="7284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNextLeg -->
+        <test-method signature="testGetRequestRide()[pri:0, instance:RestAPITest.IVRTest@515ebef3]" started-at="2025-04-09T12:25:17 IST" name="testGetRequestRide" finished-at="2025-04-09T12:25:18 IST" duration-ms="1091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRequestRide -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.IVRTest@515ebef3]" started-at="2025-04-09T12:25:18 IST" name="tearDown" finished-at="2025-04-09T12:25:18 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RestAPITest.IVRTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

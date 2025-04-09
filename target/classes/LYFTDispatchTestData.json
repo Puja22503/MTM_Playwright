@@ -1,0 +1,22 @@
+{
+  
+    "account": "A2C",
+    "ride_type": "lyft",
+    "ride_details": {
+        "origin": {
+            "address": "8627 Langdon Ave, North Hills, CA 91343, USA",
+            "lat": 34.2273, 
+            "lng": -118.470177 
+        },
+        "destination": {
+            "address": "1 World Way, Los Angeles, CA 90045",
+            "lat": 33.94463, 
+            "lng": -118.398193 
+        },
+        "passenger": {
+            "first_name": "Koni Reddy",
+            "last_name": "Test",
+            "phone_number": "+13035551234"
+        }
+    }
+  }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NoPackage]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="RestAPITest.IVRTest">
+        <methods>
+          <include name="testGetActiveRide"/>
+          <include name="testGetNextLeg"/>
+        </methods>
+      </class> <!-- RestAPITest.IVRTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [NoPackage] -->

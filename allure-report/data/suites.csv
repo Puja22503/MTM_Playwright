@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1944","testGetActiveRide","Suite","Wed Apr 09 12:25:08 IST 2025","passed","Wed Apr 09 12:25:10 IST 2025","RestAPITest.IVRTest","Test","RestAPITest.IVRTest","testGetActiveRide"
+"","1","testLyftDispatch","Suite","Wed Apr 09 12:24:57 IST 2025","unknown","Wed Apr 09 12:24:57 IST 2025","RestAPITest.LYFTTest","Test","RestAPITest.LYFTTest","testLyftDispatch"
+"","1088","testGetRequestRide","Suite","Wed Apr 09 12:25:17 IST 2025","passed","Wed Apr 09 12:25:18 IST 2025","RestAPITest.IVRTest","Test","RestAPITest.IVRTest","testGetRequestRide"
+"","1165","testGetDetails","Suite","Wed Apr 09 12:25:20 IST 2025","passed","Wed Apr 09 12:25:21 IST 2025","RestAPITest.LYFTTest","Test","RestAPITest.LYFTTest","testGetDetails"
+"","7280","testGetNextLeg","Suite","Wed Apr 09 12:25:10 IST 2025","passed","Wed Apr 09 12:25:17 IST 2025","RestAPITest.IVRTest","Test","RestAPITest.IVRTest","testGetNextLeg"
+"","1777","LyftDispatch","Default suite","Tue Apr 08 16:20:16 IST 2025","failed","Tue Apr 08 16:20:18 IST 2025","RestAPITest.LYFTTest","Default test","RestAPITest.LYFTTest","LyftDispatch"
