@@ -29,6 +29,18 @@ public String getIVRBaseURL() {
 public String getLYFTBaseURL() {
 	return pro.getProperty("LyftBaseUrl").trim();
 }
+
+public String getBreauthoringBaseURL() {
+	return pro.getProperty("BreauthoringBaseUrl").trim();
+}
+
+public String getUsername() {
+	return pro.getProperty("BreauthoringUsername");
+}
+
+public String getPassword() {
+	return pro.getProperty("BreauthoringPassword");
+}
 public String getProperty(String key) {
     return pro.getProperty(key);
 }

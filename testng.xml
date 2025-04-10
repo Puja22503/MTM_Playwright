@@ -5,6 +5,7 @@
     <classes>
       <class name="RestAPITest.IVRTest"/> 
       <class name="RestAPITest.LYFTTest"/>
+      <class name="RestAPITest.BreauthoringTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

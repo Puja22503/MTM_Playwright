@@ -21,8 +21,8 @@ public class LYFTTest extends Base {
 		// Save response body
 		String responseBody=response.text();
 		System.out.println("Response body:"+responseBody);
-		String filePath = "src/main/resources/LyftDispatchResponse.json";
-		//IVRAPIResponse.saveResponseToFile(filePath, responseBody);
+		String filePath = "src/test/resources/LyftDispatchResponse.json";
+		IVRAPIResponse.saveResponseToFile(filePath, responseBody);
 
 		//Parse JSON and Validate
 
@@ -48,7 +48,7 @@ public class LYFTTest extends Base {
 		Assert.assertEquals(response.status(),200);
 	    String responseBody=response.text();
 	    System.out.println("Response Body:"+ responseBody);
-	    String filePath="src/main/resources/LyftDispatchResponse.json";
+	    String filePath="src/test/resources/LyftDispatchResponse.json";
 	    IVRAPIResponse.saveResponseToFile(filePath, responseBody);
 	    Assert.assertTrue(responseBody.contains("test"));
 	}

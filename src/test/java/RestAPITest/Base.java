@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeClass;
 
 import RestAPI.APIClients;
 import RestAPI.APIEndpoints;
+import RestAPI.BreauthoringAPIClient;
+import RestAPI.BreauthoringAPIEnpoints;
 import Utilities.APIReadConfig;
 
 public class Base {
@@ -23,7 +25,11 @@ public class Base {
 	public String baseURL;
 	public String baseLYFTUrl;
 	public Map<String,String> lyftheaders;
-	
+	public String basebreUrl;
+	public String breusername;
+	public String brepassword;
+	protected BreauthoringAPIClient breapiClient;
+	protected BreauthoringAPIEnpoints breapiEndpoint;
 	
 	
 	@BeforeClass
@@ -48,6 +54,14 @@ public class Base {
 		lyftapiClient = new APIClients(baseLYFTUrl,lyftheaders);
 		lyftapiEnpoint = new APIEndpoints(lyftapiClient);
 		
+	
+// For Breauthoring 		
+		APIReadConfig readConfigbre = new APIReadConfig();
+		basebreUrl=readConfigbre.getBreauthoringBaseURL();
+		breusername=readConfigbre.getUsername();
+		brepassword=readConfigbre.getPassword();
+		breapiClient = new BreauthoringAPIClient(basebreUrl,breusername,brepassword);
+		breapiEndpoint = new BreauthoringAPIEnpoints(breapiClient);
 		
 	}
 
