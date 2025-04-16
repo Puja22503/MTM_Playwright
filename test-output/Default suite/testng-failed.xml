@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAPITest.LYFTTest">
+      <class name="RestAPITest.BreauthoringTest">
         <methods>
-          <include name="testLyftDispatch"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="testGetCancelreason"/>
         </methods>
-      </class> <!-- RestAPITest.LYFTTest -->
+      </class> <!-- RestAPITest.BreauthoringTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

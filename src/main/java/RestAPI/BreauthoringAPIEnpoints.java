@@ -1,6 +1,6 @@
 package RestAPI;
 
-import java.util.HashMap;
+
 import java.util.Map;
 
 import com.microsoft.playwright.APIResponse;
@@ -17,24 +17,20 @@ public class BreauthoringAPIEnpoints {
 
 	//Get cancel reason   
 
-	public APIResponse getcancelReason() {
-		Map<String,String> options = new HashMap<>();
-		options.put("name", "Cancelreason");
-		options.put("planCode", "FHC");
-		options.put("effectiveDate", "10-04-2025");
-		return breapiClient.getJson("/breauthoring/api/DataSources", options);
+	public APIResponse getcancelReason(Map<String,String> queryParams) {
+	return breapiClient.getJson("/breauthoring/api/DataSources", queryParams);
 	}
 
 	//Get transaction details
    
-   public APIResponse getTransactiondetails() {
-	   Map<String,String> options = new HashMap<>();
-	   options.put("name", "Transactionclassification");
-	   options.put("planCode","FHC");
-	   options.put("effectiveDate", "11-04-2025");
-	   return breapiClient.getJson("/breauthoring/api/DataSources", options);
+   public APIResponse getTransactiondetails(Map<String,String> queryParams) {
+   return breapiClient.getJson("/breauthoring/api/DataSources", queryParams);
    }	
    
-   //
+   //Get denial codes
+   
+   public APIResponse getDenialcodes(Map<String,String> queryParams) {
+	   return breapiClient.getJson("/breauthoring/api/DataSources", queryParams);
+   }
 
 }

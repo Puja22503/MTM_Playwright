@@ -1,5 +1,9 @@
 package RestAPITest;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.testng.Assert;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -7,12 +11,37 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.playwright.APIResponse;
+
+import RestAPI.APIClients;
+import RestAPI.APIEndpoints;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Utilities.APIReadJson;
+import Utilities.APIReadConfig;
+import Utilities.APIReadHeaders;
 import Utilities.IVRAPIResponse;
 
-public class LYFTTest extends Base {
+public class LYFTTest {
+
+	protected APIClients lyftapiClient;
+	protected APIEndpoints lyftapiEnpoint;
+	public String baseLYFTUrl;
+	public Map<String,String> lyftheaders;
+	APIReadConfig readConfig;
+
+
+	@BeforeClass
+	public void setup() throws IOException {
+		// For LYFT		
+		 readConfig = new APIReadConfig();
+		baseLYFTUrl=readConfig.getLYFTBaseURL();
+		APIReadHeaders readHeaders = new APIReadHeaders("Headers.json");
+		lyftheaders = readHeaders.getHeaders("LYFTHeaders");
+		lyftapiClient = new APIClients(baseLYFTUrl,lyftheaders);
+		lyftapiEnpoint = new APIEndpoints(lyftapiClient);
+	}
 	@Test(enabled = false)
 	public void testLyftDispatch() throws JsonMappingException, JsonProcessingException {
 		APIResponse response = lyftapiEnpoint.getLYFTDispatch(lyftheaders);
@@ -21,7 +50,7 @@ public class LYFTTest extends Base {
 		// Save response body
 		String responseBody=response.text();
 		System.out.println("Response body:"+responseBody);
-		String filePath = "src/test/resources/LyftDispatchResponse.json";
+		String filePath=readConfig.getLyftResponsefile();
 		IVRAPIResponse.saveResponseToFile(filePath, responseBody);
 
 		//Parse JSON and Validate
@@ -40,16 +69,21 @@ public class LYFTTest extends Base {
 		Assert.assertEquals(phoneNumber.asText(),expectedPhoneNumber ,"Phone No is not matching");
 
 	}
-	
+
 	@Test
 	public void testGetDetails() {
-		
+
 		APIResponse response = lyftapiEnpoint.getDetails();
 		Assert.assertEquals(response.status(),200);
-	    String responseBody=response.text();
-	    System.out.println("Response Body:"+ responseBody);
-	    String filePath="src/test/resources/LyftDispatchResponse.json";
-	    IVRAPIResponse.saveResponseToFile(filePath, responseBody);
-	    Assert.assertTrue(responseBody.contains("test"));
+		String responseBody=response.text();
+		System.out.println("Response Body:"+ responseBody);
+		String filePath=readConfig.getLyftResponsefile();
+		IVRAPIResponse.saveResponseToFile(filePath, responseBody);
+		Assert.assertTrue(responseBody.contains("test"));
+	}
+
+	@AfterClass
+	public void tearDown() {
+		lyftapiClient.dispose();
 	}
 }

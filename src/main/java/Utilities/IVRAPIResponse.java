@@ -11,7 +11,7 @@ import java.io.File;
 	    public static void saveResponseToFile(String filePath, Object response) {
 	        try {
 	            File file = new File(filePath);
-	            file.getParentFile().mkdirs(); // Ensure directory exists before writing
+	            file.getParentFile().mkdirs(); 
 
 	            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, response);
 	            System.out.println("Response saved successfully to: " + filePath);

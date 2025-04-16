@@ -1,0 +1,17 @@
+{
+	"IvrHeaders":{
+		"Content-Type":"application/json",
+		"X-Token-Key":"5jW-BVent9tt-mtxkmx2*KQAYJf"
+	},
+	"LYFTHeaders":{
+		"X-Token-Key":"UQQ-A2C-L*FTEWFJVGwIIUlhaAgcG",
+		"Content-Type":"application/json"
+	},
+	"BreauthoringGetCancelHeaders":{
+		"name":"Cancelreason",
+		"planCode":"FHC",
+		"effectiveDate": "10-04-2025"
+	}
+}
+
+

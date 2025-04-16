@@ -1,1 +1,0 @@
-{"total":2,"items":[{"uid":"2c8837b97293ea01a164a5cd7048ad56","name":"Default suite","statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1}},{"uid":"4d77e4b86525e0e10aeeffa1e7a7a975","name":"Regression suite","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":1,"total":8}}]}

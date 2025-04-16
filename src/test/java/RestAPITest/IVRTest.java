@@ -1,21 +1,50 @@
 package RestAPITest;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.playwright.APIResponse;
 
+import RestAPI.APIClients;
+import RestAPI.APIEndpoints;
+import Utilities.APIReadConfig;
+import Utilities.APIReadHeaders;
 import Utilities.IVRAPIResponse;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
 
-public class IVRTest extends Base {
+
+public class IVRTest{
+
+	protected APIClients apiClient;
+	protected APIEndpoints apiEndpoint;
+	public Map<String,String> headers;
+	public String baseURL;
+    APIReadConfig readConfig;
+
+
+	@BeforeClass
+	public void setup() throws IOException {
+
+		// For IVR 	
+		readConfig = new APIReadConfig();
+		baseURL=readConfig.getIVRBaseURL();
+		APIReadHeaders readHeaders = new APIReadHeaders("Headers.json");
+		headers = readHeaders.getHeaders("IvrHeaders");
+
+		apiClient = new APIClients(baseURL,headers);
+		apiEndpoint = new APIEndpoints(apiClient);
+	}
+
 
 	@Test
 	@Severity(SeverityLevel.BLOCKER)
@@ -23,7 +52,7 @@ public class IVRTest extends Base {
 		APIResponse response = apiEndpoint.getNextLegJson(headers);
 		Assert.assertEquals(response.status(), 200);
 		String responseText=response.text();
-		String filePath = "src/main/resources/IvrNextLegResponse.json";
+		String filePath = readConfig.getIvrResponsefile();
 		IVRAPIResponse.saveResponseToFile(filePath, response.text()); 
 		System.out.println("ResponseText:"+responseText);
 		Assert.assertEquals(response.statusText(),"OK");
@@ -52,6 +81,12 @@ public class IVRTest extends Base {
 		String actualnetStopId=dataNode.get("netStopId").asText();  
 		Assert.assertEquals(actualnetStopId, "DC9E910F-419A-4444-9330-139BA79308E3"); 
 		Assert.assertEquals(dataNode.get("targetSystem").asText(), "LYFT");
-}
+	}
+
+	@AfterClass
+	public void tearDown() {
+		apiClient.dispose();
+
+	}
 
 }

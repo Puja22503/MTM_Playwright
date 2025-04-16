@@ -1,0 +1,17 @@
+{
+  "BreauthoringGetCancel":{
+  "name":"Cancelreason",
+  "planCode":"FHC",
+  "effectiveDate": "10-04-2025"
+   },
+   "getTransactiondetails":{
+	"name":"Transactionclassification",
+	"planCode":"FHC",
+	"effectiveDate": "11-04-25"
+   },
+   "getDenialCodes":{
+	"name":"Denialcodes",
+	"planCode":"FHC",
+	"effectiveDate":"12-04-25"
+   }
+}

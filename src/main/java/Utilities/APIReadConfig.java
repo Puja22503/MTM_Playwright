@@ -23,15 +23,15 @@ public class APIReadConfig {
 }
 
 public String getIVRBaseURL() {
-    return pro.getProperty("IvrBaseUrl").trim();
+    return pro.getProperty("IvrBaseUrl");
 }
 
 public String getLYFTBaseURL() {
-	return pro.getProperty("LyftBaseUrl").trim();
+	return pro.getProperty("LyftBaseUrl");
 }
 
 public String getBreauthoringBaseURL() {
-	return pro.getProperty("BreauthoringBaseUrl").trim();
+	return pro.getProperty("BreauthoringBaseUrl");
 }
 
 public String getUsername() {
@@ -40,6 +40,18 @@ public String getUsername() {
 
 public String getPassword() {
 	return pro.getProperty("BreauthoringPassword");
+}
+
+public String getIvrResponsefile() {
+	return pro.getProperty("IVRresponsepath");
+}
+
+public String getLyftResponsefile() {
+	return pro.getProperty("LYFTresponsepath");
+}
+
+public String getBreauthoringResponsefile() {
+	return pro.getProperty("Breauthoringresponsepath");
 }
 public String getProperty(String key) {
     return pro.getProperty(key);

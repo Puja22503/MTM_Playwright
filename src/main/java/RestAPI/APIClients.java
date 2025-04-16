@@ -25,7 +25,7 @@ public class APIClients {
 		APIRequest.NewContextOptions contextOptions= new APIRequest.NewContextOptions()
 				.setBaseURL(baseURL)
 				.setExtraHTTPHeaders(headers)
-				.setTimeout(60000);
+				.setTimeout(80000);
 
 //Initialize requestContext using those options		
 		requestContext = p.request().newContext(contextOptions);
