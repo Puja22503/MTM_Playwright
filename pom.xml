@@ -13,9 +13,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>22</maven.compiler.source> <!-- Adjust to your Java version -->
-    <maven.compiler.target>22</maven.compiler.target>
-    <maven.compiler.release>22</maven.compiler.release>
+    <maven.compiler.source>17</maven.compiler.source> <!-- Adjust to your Java version -->
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.release>17</maven.compiler.release>
     <aspectj.version>1.9.22</aspectj.version>
   </properties>
 
