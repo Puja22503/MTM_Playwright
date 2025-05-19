@@ -2,64 +2,71 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T11:28:25 IST" name="Regression suite" finished-at="2025-04-16T11:29:35 IST" duration-ms="69801">
+  <suite started-at="2025-05-19T12:11:54 IST" name="Regression suite" finished-at="2025-05-19T12:12:32 IST" duration-ms="38082">
     <groups>
+      <group name="regression">
+        <method signature="IVRTest.testGetNextLeg()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" name="testGetNextLeg" class="RestAPITest.IVRTest"/>
+        <method signature="IVRTest.testGetRequestRide()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" name="testGetRequestRide" class="RestAPITest.IVRTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="IVRTest.testGetActiveRide()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" name="testGetActiveRide" class="RestAPITest.IVRTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-04-16T11:28:25 IST" name="Test" finished-at="2025-04-16T11:29:35 IST" duration-ms="69801">
+    <test started-at="2025-05-19T12:11:54 IST" name="Test" finished-at="2025-05-19T12:12:32 IST" duration-ms="38082">
       <class name="RestAPITest.LYFTTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.LYFTTest@d1a10ac]" started-at="2025-04-16T11:29:17 IST" name="setup" finished-at="2025-04-16T11:29:17 IST" duration-ms="656" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.LYFTTest@a7f0ab6]" started-at="2025-05-19T12:12:20 IST" name="setup" finished-at="2025-05-19T12:12:21 IST" duration-ms="1092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetDetails()[pri:0, instance:RestAPITest.LYFTTest@d1a10ac]" started-at="2025-04-16T11:29:17 IST" name="testGetDetails" finished-at="2025-04-16T11:29:20 IST" duration-ms="2638" status="PASS">
+        <test-method signature="testGetDetails()[pri:0, instance:RestAPITest.LYFTTest@a7f0ab6]" started-at="2025-05-19T12:12:21 IST" name="testGetDetails" finished-at="2025-05-19T12:12:22 IST" duration-ms="1331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.LYFTTest@d1a10ac]" started-at="2025-04-16T11:29:20 IST" name="tearDown" finished-at="2025-04-16T11:29:20 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.LYFTTest@a7f0ab6]" started-at="2025-05-19T12:12:22 IST" name="tearDown" finished-at="2025-05-19T12:12:22 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- RestAPITest.LYFTTest -->
       <class name="RestAPITest.IVRTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.IVRTest@7068f7ca]" started-at="2025-04-16T11:28:26 IST" name="setup" finished-at="2025-04-16T11:28:36 IST" duration-ms="10094" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" started-at="2025-05-19T12:11:54 IST" name="setup" finished-at="2025-05-19T12:12:09 IST" duration-ms="15319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetActiveRide()[pri:0, instance:RestAPITest.IVRTest@7068f7ca]" started-at="2025-04-16T11:28:36 IST" name="testGetActiveRide" finished-at="2025-04-16T11:28:53 IST" duration-ms="17339" status="PASS">
+        <test-method signature="testGetActiveRide()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" started-at="2025-05-19T12:12:09 IST" name="testGetActiveRide" finished-at="2025-05-19T12:12:11 IST" duration-ms="1901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetActiveRide -->
-        <test-method signature="testGetNextLeg()[pri:0, instance:RestAPITest.IVRTest@7068f7ca]" started-at="2025-04-16T11:28:53 IST" name="testGetNextLeg" finished-at="2025-04-16T11:29:12 IST" duration-ms="19114" status="PASS">
+        <test-method signature="testGetNextLeg()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" started-at="2025-05-19T12:12:11 IST" name="testGetNextLeg" finished-at="2025-05-19T12:12:18 IST" duration-ms="7029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetNextLeg -->
-        <test-method signature="testGetRequestRide()[pri:0, instance:RestAPITest.IVRTest@7068f7ca]" started-at="2025-04-16T11:29:12 IST" name="testGetRequestRide" finished-at="2025-04-16T11:29:17 IST" duration-ms="4385" status="PASS">
+        <test-method signature="testGetRequestRide()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" started-at="2025-05-19T12:12:18 IST" name="testGetRequestRide" finished-at="2025-05-19T12:12:20 IST" duration-ms="1434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetRequestRide -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.IVRTest@7068f7ca]" started-at="2025-04-16T11:29:17 IST" name="tearDown" finished-at="2025-04-16T11:29:17 IST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.IVRTest@31fc71ab]" started-at="2025-05-19T12:12:20 IST" name="tearDown" finished-at="2025-05-19T12:12:20 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- RestAPITest.IVRTest -->
       <class name="RestAPITest.BreauthoringTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.BreauthoringTest@6fca2a8f]" started-at="2025-04-16T11:29:20 IST" name="setup" finished-at="2025-04-16T11:29:21 IST" duration-ms="741" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RestAPITest.BreauthoringTest@41f35f7c]" started-at="2025-05-19T12:12:22 IST" name="setup" finished-at="2025-05-19T12:12:24 IST" duration-ms="1436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testDenialDetails()[pri:0, instance:RestAPITest.BreauthoringTest@6fca2a8f]" started-at="2025-04-16T11:29:21 IST" name="testDenialDetails" finished-at="2025-04-16T11:29:29 IST" duration-ms="8258" status="PASS">
+        <test-method signature="testDenialDetails()[pri:0, instance:RestAPITest.BreauthoringTest@41f35f7c]" started-at="2025-05-19T12:12:24 IST" name="testDenialDetails" finished-at="2025-05-19T12:12:26 IST" duration-ms="2735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDenialDetails -->
-        <test-method signature="testGetCancelreason()[pri:0, instance:RestAPITest.BreauthoringTest@6fca2a8f]" started-at="2025-04-16T11:29:29 IST" name="testGetCancelreason" finished-at="2025-04-16T11:29:32 IST" duration-ms="3363" status="PASS">
+        <test-method signature="testGetCancelreason()[pri:0, instance:RestAPITest.BreauthoringTest@41f35f7c]" started-at="2025-05-19T12:12:26 IST" name="testGetCancelreason" finished-at="2025-05-19T12:12:29 IST" duration-ms="2564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetCancelreason -->
-        <test-method signature="testTransactionDetails()[pri:0, instance:RestAPITest.BreauthoringTest@6fca2a8f]" started-at="2025-04-16T11:29:32 IST" name="testTransactionDetails" finished-at="2025-04-16T11:29:35 IST" duration-ms="2707" status="PASS">
+        <test-method signature="testTransactionDetails()[pri:0, instance:RestAPITest.BreauthoringTest@41f35f7c]" started-at="2025-05-19T12:12:29 IST" name="testTransactionDetails" finished-at="2025-05-19T12:12:32 IST" duration-ms="2638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransactionDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.BreauthoringTest@6fca2a8f]" started-at="2025-04-16T11:29:35 IST" name="tearDown" finished-at="2025-04-16T11:29:35 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RestAPITest.BreauthoringTest@41f35f7c]" started-at="2025-05-19T12:12:32 IST" name="tearDown" finished-at="2025-05-19T12:12:32 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

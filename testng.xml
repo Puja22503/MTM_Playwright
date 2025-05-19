@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="RestAPITest.IVRTest"/> 
-      <class name="RestAPITest.LYFTTest"/>
       <class name="RestAPITest.BreauthoringTest"/>
     </classes>
   </test> <!-- Test -->

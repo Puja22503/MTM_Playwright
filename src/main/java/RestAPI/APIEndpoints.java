@@ -10,7 +10,6 @@ import Utilities.IVRTestData;
 
 public class APIEndpoints {
 
-// APIClient class is for managing API requests	
 
 	private final APIClients apiClient;
 

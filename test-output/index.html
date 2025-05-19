@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression_suite" class="navigator-link">
-              <span class="suite-name border-passed">Regression suite</span>
+              <span class="suite-name border-failed">Regression suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_suite" class="hide-methods failed suite-Regression_suite"> (hide)</a> <!-- hide-methods failed suite-Regression_suite -->
+                      <a href="#" panel-name="suite-Regression_suite" class="show-methods failed suite-Regression_suite"> (show)</a> <!-- show-methods failed suite-Regression_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_suite" title="RestAPITest.IVRTest" class="method navigator-link" hash-for-method="testGetRequestRide">testGetRequestRide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,17 +132,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_suite" title="RestAPITest.LYFTTest" class="method navigator-link" hash-for-method="testGetDetails">testGetDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression_suite" title="RestAPITest.IVRTest" class="method navigator-link" hash-for-method="testGetNextLeg">testGetNextLeg</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_suite" title="RestAPITest.IVRTest" class="method navigator-link" hash-for-method="testGetRequestRide">testGetRequestRide</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -148,6 +152,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_suite" class="panel Regression_suite">
+          <div class="suite-Regression_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">RestAPITest.IVRTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetRequestRide">
+                  </a> <!-- testGetRequestRide -->
+                  <span class="method-name">testGetRequestRide</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
+	at RestAPITest.IVRTest.testGetRequestRide(IVRTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_suite-class-failed -->
           <div class="suite-Regression_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -197,28 +221,6 @@
                   <span class="method-name">testGetNextLeg</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetRequestRide">
-                  </a> <!-- testGetRequestRide -->
-                  <span class="method-name">testGetRequestRide</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_suite-class-passed -->
-          <div class="suite-Regression_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">RestAPITest.LYFTTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetDetails">
-                  </a> <!-- testGetDetails -->
-                  <span class="method-name">testGetDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Regression_suite-class-passed -->
         </div> <!-- panel Regression_suite -->
@@ -234,7 +236,6 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;RestAPITest.IVRTest&quot;/&gt;
-      &lt;class name=&quot;RestAPITest.LYFTTest&quot;/&gt;
       &lt;class name=&quot;RestAPITest.BreauthoringTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -249,7 +250,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -275,40 +276,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testGetNextLeg')
 data.setCell(0, 2, 'RestAPITest.IVRTest')
-data.setCell(0, 3, 10046);
+data.setCell(0, 3, 6918);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testDenialDetails')
 data.setCell(1, 2, 'RestAPITest.BreauthoringTest')
-data.setCell(1, 3, 2265);
+data.setCell(1, 3, 6515);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testTransactionDetails')
-data.setCell(2, 2, 'RestAPITest.BreauthoringTest')
-data.setCell(2, 3, 2232);
+data.setCell(2, 1, 'testGetActiveRide')
+data.setCell(2, 2, 'RestAPITest.IVRTest')
+data.setCell(2, 3, 3312);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testGetCancelreason')
-data.setCell(3, 2, 'RestAPITest.BreauthoringTest')
-data.setCell(3, 3, 2222);
+data.setCell(3, 1, 'testGetRequestRide')
+data.setCell(3, 2, 'RestAPITest.IVRTest')
+data.setCell(3, 3, 3250);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testGetActiveRide')
-data.setCell(4, 2, 'RestAPITest.IVRTest')
-data.setCell(4, 3, 1663);
+data.setCell(4, 1, 'testGetCancelreason')
+data.setCell(4, 2, 'RestAPITest.BreauthoringTest')
+data.setCell(4, 3, 2660);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testGetDetails')
-data.setCell(5, 2, 'RestAPITest.LYFTTest')
-data.setCell(5, 3, 1157);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testGetRequestRide')
-data.setCell(6, 2, 'RestAPITest.IVRTest')
-data.setCell(6, 3, 1131);
+data.setCell(5, 1, 'testTransactionDetails')
+data.setCell(5, 2, 'RestAPITest.BreauthoringTest')
+data.setCell(5, 3, 2308);
 window.suiteTableData['Regression_suite']= { tableData: data, tableDiv: 'times-div-Regression_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Regression_suite">
               </div> <!-- times-div-Regression_suite -->
             </div> <!-- times-div -->
@@ -323,16 +320,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">RestAPITest.LYFTTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testLyftDispatch</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Regression_suite" class="panel">
@@ -348,57 +338,44 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testGetActiveRide</span>
-                <span class="method-start">9550 ms</span>
+                <span class="method-start">7875 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetNextLeg</span>
-                <span class="method-start">11227 ms</span>
+                <span class="method-start">11287 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testGetRequestRide</span>
-                <span class="method-start">21279 ms</span>
+                <span class="method-start">18212 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22415 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">RestAPITest.LYFTTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">22437 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testGetDetails</span>
-                <span class="method-start">23231 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24392 ms</span>
+                <span class="method-start">21468 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RestAPITest.BreauthoringTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">24413 ms</span>
+                <span class="method-start">21484 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testDenialDetails</span>
-                <span class="method-start">25123 ms</span>
+                <span class="method-start">22217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetCancelreason</span>
-                <span class="method-start">27395 ms</span>
+                <span class="method-start">28739 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTransactionDetails</span>
-                <span class="method-start">29623 ms</span>
+                <span class="method-start">31405 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31859 ms</span>
+                <span class="method-start">33717 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

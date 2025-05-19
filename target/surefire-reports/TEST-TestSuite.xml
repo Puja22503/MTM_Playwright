@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="72.115" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="40.714" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\puja.p\AppData\Local\Temp\surefire6993473255946750131\surefirebooter-20250416112821953_3.jar C:\Users\puja.p\AppData\Local\Temp\surefire6993473255946750131 2025-04-16T11-28-21_698-jvmRun1 surefire-20250416112821953_1tmp surefire_0-20250416112821953_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\puja.p\AppData\Local\Temp\surefire7680078477500075410\surefirebooter-20250519121149548_3.jar C:\Users\puja.p\AppData\Local\Temp\surefire7680078477500075410 2025-05-19T12-11-49_189-jvmRun1 surefire-20250519121149548_1tmp surefire_0-20250519121149548_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\puja.p\eclipse-workspace\Eclipse project\GGcoins_artifactid\MTM_Controllers\target\test-classes;C:\Users\puja.p\eclipse-workspace\Eclipse project\GGcoins_artifactid\MTM_Controllers\target\classes;C:\Users\puja.p\.m2\repository\com\microsoft\playwright\playwright\1.44.0\playwright-1.44.0.jar;C:\Users\puja.p\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\puja.p\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\puja.p\.m2\repository\com\microsoft\playwright\driver\1.44.0\driver-1.44.0.jar;C:\Users\puja.p\.m2\repository\com\microsoft\playwright\driver-bundle\1.44.0\driver-bundle-1.44.0.jar;C:\Users\puja.p\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\puja.p\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\puja.p\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\puja.p\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\puja.p\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.2\jackson-databind-2.18.2.jar;C:\Users\puja.p\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.2\jackson-annotations-2.18.2.jar;C:\Users\puja.p\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.2\jackson-core-2.18.2.jar;C:\Users\puja.p\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\puja.p\.m2\repository\org\json\json\20250107\json-20250107.jar;C:\Users\puja.p\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\puja.p\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\puja.p\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\puja.p\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;C:\Users\puja.p\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\puja.p\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\puja.p\AppData\Local\Temp\surefire6993473255946750131\surefirebooter-20250416112821953_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\puja.p\AppData\Local\Temp\surefire7680078477500075410\surefirebooter-20250519121149548_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -59,37 +59,37 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testGetActiveRide" classname="RestAPITest.IVRTest" time="17.345">
+  <testcase name="testGetActiveRide" classname="RestAPITest.IVRTest" time="1.901">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testGetNextLeg" classname="RestAPITest.IVRTest" time="19.118">
+  <testcase name="testGetNextLeg" classname="RestAPITest.IVRTest" time="7.045">
     <system-out><![CDATA[Response saved successfully to: src/main/resources/IvrNextLegResponse.json
 ResponseText:{"Message":"No leg data found","IsSuccess":false,"Data":null}
 ]]></system-out>
   </testcase>
-  <testcase name="testGetRequestRide" classname="RestAPITest.IVRTest" time="4.39">
+  <testcase name="testGetRequestRide" classname="RestAPITest.IVRTest" time="1.428">
     <system-out><![CDATA[Response Body:{"Message":null,"IsSuccess":true,"Data":{"netStopId":"DC9E910F-419A-4444-9330-139BA79308E3","targetSystem":"LYFT","targetSystemRideId":null,"targetSystemRideStatus":"requested"}}
 ]]></system-out>
   </testcase>
-  <testcase name="testGetDetails" classname="RestAPITest.LYFTTest" time="2.641">
+  <testcase name="testGetDetails" classname="RestAPITest.LYFTTest" time="1.342">
     <system-out><![CDATA[Response Body:{"Hello from A2C.RideRequest":"test"}
 Response saved successfully to: src/test/resources/LyftDispatchResponse.json
 ]]></system-out>
   </testcase>
-  <testcase name="testDenialDetails" classname="RestAPITest.BreauthoringTest" time="8.278">
+  <testcase name="testDenialDetails" classname="RestAPITest.BreauthoringTest" time="2.745">
     <system-out><![CDATA[Response saved successfully to: src/test/resources/BreauthoringResponse.json
 ]]></system-out>
   </testcase>
-  <testcase name="testGetCancelreason" classname="RestAPITest.BreauthoringTest" time="3.375">
+  <testcase name="testGetCancelreason" classname="RestAPITest.BreauthoringTest" time="2.569">
     <system-out><![CDATA[Response Body:{"dataSources":[{"id":15,"label":"Addt info req and not received","value":"Addt info req and not received"},{"id":14,"label":"Advance Notice Not Met","value":"Advance Notice Not Met"},{"id":21,"label":"Beneficiary Has Med-B/Alt Cov","value":"Beneficiary Has Med-B/Alt Cov"},{"id":22,"label":"Emerg Transportation Required","value":"Emerg Transportation Required"},{"id":20,"label":"Emergent Transport Required","value":"Emergent Transport Required"},{"id":29,"label":"Exceeds Addtl Stops Allowed","value":"Exceeds Addtl Stops Allowed"},{"id":28,"label":"Exceeds Max Passenger","value":"Exceeds Max Passenger"},{"id":4,"label":"Expired Eligibility","value":"Expired Eligibility"},{"id":19,"label":"Has Part B or Other Coverage","value":"Has Part B or Other Coverage"},{"id":27,"label":"Incomplete Information","value":"Incomplete Information"},{"id":12,"label":"IP or Escort Not Approved","value":"IP or Escort Not Approved"},{"id":7,"label":"Member Not Active","value":"Member Not Active"},{"id":26,"label":"Member Not Eligible/Active Per HP","value":"Member Not Eligible/Active Per HP"},{"id":6,"label":"Member Not In File","value":"Member Not In File"},{"id":5,"label":"Non-Covered Service","value":"Non-Covered Service"},{"id":11,"label":"Not Closest Provider","value":"Not Closest Provider"},{"id":8,"label":"Other Available Transportation","value":"Other Available Transportation"},{"id":9,"label":"Other Coverage Available","value":"Other Coverage Available"},{"id":2,"label":"Out of service area","value":"Out of service area"},{"id":13,"label":"Post Trip Auth Denied","value":"Post Trip Auth Denied"},{"id":17,"label":"Protocol - Does Not Meet Protocol","value":"Protocol - Does Not Meet Protocol"},{"id":0,"label":"Protocol - Non-Urgent Short Notice","value":"Protocol - Non-Urgent Short Notice"},{"id":1,"label":"Protocol - Trip Distance Exceeded","value":"Protocol - Trip Distance Exceeded"},{"id":3,"label":"Protocol - Trip Limit Exceeded","value":"Protocol - Trip Limit Exceeded"},{"id":16,"label":"Refusal-no other Avail","value":"Refusal-no other Avail"},{"id":30,"label":"Spend Down Not Met","value":"Spend Down Not Met"},{"id":10,"label":"Unable To Confirm Transport/Appt","value":"Unable To Confirm Transport/Appt"},{"id":23,"label":"Vendor Cancel - Traffic/Ex ETA","value":"Vendor Cancel - Traffic/Ex ETA"},{"id":25,"label":"Vendor Cancel-Other","value":"Vendor Cancel-Other"},{"id":24,"label":"Vendor Cancel-ResourceUnavail","value":"Vendor Cancel-ResourceUnavail"},{"id":18,"label":"Wrong Level of Service & AMB","value":"Wrong Level of Service & AMB"}]}
 Response saved successfully to: src/test/resources/BreauthoringResponse.json
 Label for id 15: Addt info req and not received
 ]]></system-out>
   </testcase>
-  <testcase name="testTransactionDetails" classname="RestAPITest.BreauthoringTest" time="2.713">
+  <testcase name="testTransactionDetails" classname="RestAPITest.BreauthoringTest" time="2.629">
     <system-out><![CDATA[Response saved successfully to: src/test/resources/BreauthoringResponse.json
 ]]></system-out>
   </testcase>
